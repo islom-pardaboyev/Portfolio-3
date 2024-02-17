@@ -6,6 +6,8 @@
     <title>Portfolio 3</title>
     <!-- CSS Link -->
     <link rel="stylesheet" href="/css/index.css">
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Box Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -193,10 +195,72 @@
         <!-- Heading -->
         <h2 class="heading">Reviews</h2>
         <!-- Review Content -->
-        <div class="reviews-content">
-            
+        <div class="reviews-content swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- Review Box -->
+                    <div class="review-box">
+                        <i class="bx bxs-quote-right"></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus neque tempore deserunt culpa? Incidunt similique, praesentium recusandae porro dolorum at tempore ad eligendi quis.
+                        </p>
+                        <div class="review-profile">
+                            <h2>John Mark</h2>
+                            <span>From London, UK</span>
+                            <img src="/img/review-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="review-box">
+                        <i class="bx bxs-quote-right"></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus neque tempore deserunt culpa? Incidunt similique, praesentium recusandae porro dolorum at tempore ad eligendi quis.
+                        </p>
+                        <div class="review-profile">
+                            <h2>Alexa</h2>
+                            <span>From USA</span>
+                            <img src="/img/review-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="review-box">
+                        <i class="bx bxs-quote-right"></i>
+                        <p class="review-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum necessitatibus neque tempore deserunt culpa? Incidunt similique, praesentium recusandae porro dolorum at tempore ad eligendi quis.
+                        </p>
+                        <div class="review-profile">
+                            <h2>Audrey Bella</h2>
+                            <span>From Finland</span>
+                            <img src="/img/review-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+
         </div>
     </section>
+
+    <!-- Contact Form -->
+    <section class="contact container" id="contact">
+        <!-- Heading -->
+        <h2 class="heading">Contact</h2>
+        <!-- Contact Form -->
+        <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name" class="name" required>
+            <input type="email" placeholder="Email address..." class="email" required>
+            <textarea cols="30" rows="10" placeholder="Write message here..." class="massage" required></textarea> 
+            <input type="submit" value="Send" class="send-btn">
+        </form>
+    </section>
+
+    <!-- Link Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- JS Link -->
     <script src="/js/index.js"></script>
 </body>
